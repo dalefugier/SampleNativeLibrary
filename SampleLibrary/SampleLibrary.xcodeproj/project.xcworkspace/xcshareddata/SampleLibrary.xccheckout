@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4C5D1227-18BE-4FAD-B8A2-D2BC4A355077</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SampleLibrary</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FCD369F80ED45DF7E805DB2D9169737A83BDC626</key>
+		<string>https://github.com/dalefugier/SampleNativeLibrary.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SampleLibrary/SampleLibrary.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FCD369F80ED45DF7E805DB2D9169737A83BDC626</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dalefugier/SampleNativeLibrary.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FCD369F80ED45DF7E805DB2D9169737A83BDC626</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FCD369F80ED45DF7E805DB2D9169737A83BDC626</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SampleNativeLibrary</string>
+		</dict>
+	</array>
+</dict>
+</plist>

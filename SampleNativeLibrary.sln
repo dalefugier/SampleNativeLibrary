@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRhino.Mac", "SampleRhino\SampleRhino.Mac.csproj", "{90AAF8B5-F315-4CF9-B0A6-D593BC2C8F83}"
@@ -15,6 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Debug|Any CPU.Build.0 = Debug|x64
+		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Release|Any CPU.ActiveCfg = Release|x64
+		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Release|Any CPU.Build.0 = Release|x64
 		{90AAF8B5-F315-4CF9-B0A6-D593BC2C8F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90AAF8B5-F315-4CF9-B0A6-D593BC2C8F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AAF8B5-F315-4CF9-B0A6-D593BC2C8F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,10 +27,6 @@ Global
 		{E075F3F9-8E6F-4C26-BA34-046BFE9FABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E075F3F9-8E6F-4C26-BA34-046BFE9FABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E075F3F9-8E6F-4C26-BA34-046BFE9FABC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Debug|Any CPU.Build.0 = Debug|x64
-		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Release|Any CPU.ActiveCfg = Release|x64
-		{1164A1AE-DA13-42BB-B5B3-6CB7C51617A7}.Release|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
