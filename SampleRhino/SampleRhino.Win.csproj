@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90AAF8B5-F315-4CF9-B0A6-D593BC2C8F83}</ProjectGuid>
+    <ProjectGuid>{E075F3F9-8E6F-4C26-BA34-046BFE9FABC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>SampleRhino</RootNamespace>
     <AssemblyName>SampleRhino</AssemblyName>
@@ -13,36 +13,36 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;ON_RUNTIME_APPLE</DefineConstants>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;ON_RUNTIME_WIN</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\bin\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <DefineConstants>ON_RUNTIME_APPLE</DefineConstants>
+    <DefineConstants>ON_RUNTIME_WIN</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="RhinoCommon">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\RhinoCommon.dll</HintPath>
+    <Reference Include="Eto">
+      <HintPath>C:\Program Files\Rhino WIP\System\Eto.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rhino.UI">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\Rhino.UI.dll</HintPath>
+      <HintPath>C:\Program Files\Rhino WIP\System\Rhino.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Eto">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\Eto.dll</HintPath>
+    <Reference Include="RhinoCommon">
+      <HintPath>C:\Program Files\Rhino WIP\System\RhinoCommon.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,4 +51,8 @@
     <Compile Include="UnsafeNativeMethods.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(TargetName).rhp"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

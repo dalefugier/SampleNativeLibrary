@@ -10,7 +10,7 @@
   /// </summary>
   public class SampleRhinoPlugin : Rhino.PlugIns.PlugIn
   {
-    /// <summary
+    /// <summary>
     /// Gets the one and only instance of the SampleRhinoPlugin plug-in.
     /// </summary>
     public static SampleRhinoPlugin Instance { get; private set; }
