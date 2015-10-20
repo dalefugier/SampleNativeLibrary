@@ -32,15 +32,15 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="RhinoCommon">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\RhinoCommon.dll</HintPath>
+      <HintPath>\Applications\Rhinoceros.app\Contents\Resources\RhinoCommon.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rhino.UI">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\Rhino.UI.dll</HintPath>
+      <HintPath>\Applications\Rhinoceros.app\Contents\Resources\Rhino.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Eto">
-      <HintPath>..\..\..\..\..\Applications\Rhinoceros.app\Contents\Resources\Eto.dll</HintPath>
+      <HintPath>\Applications\Rhinoceros.app\Contents\Resources\Eto.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
