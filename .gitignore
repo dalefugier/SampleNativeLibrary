@@ -6,3 +6,7 @@
 
 /SampleLibrary/bin
 /SampleLibrary/obj
+
+/SampleLibrary/build
+/SampleLibrary/SampleLibrary.xcodeproj/project.xcworkspace/xcuserdata/
+/SampleLibrary/SampleLibrary.xcodeproj/xcuserdata/
