@@ -6,7 +6,7 @@ namespace SampleRhino
   {
 #if ON_RUNTIME_WIN
     public const string lib = "SampleLibrary.dll";
-#else // ON_RUNTIME_APPLE
+#else // ON_RUNTIME_MAC
     public const string lib = "SampleLibrary";
 #endif // ON_RUNTIME_WIN
   }
