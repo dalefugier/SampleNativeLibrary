@@ -28,11 +28,11 @@ To build the Rhino plug-in, load the **SampleNativeLibrary.sln** solution in Xam
 
 To build the native library, load the **SampleLibrary.xcodeproj** into Xcode. Then click **Product -> Build**. Note, you will need to copy the output library, **libSampleLibrary.dylib**, to the Rhino plug-in output folder. Also, copy **SampleRhino.dll.config**, found in the **SampleLibrary** project folder, to the Rhino plug-in folder. For more information on the config file, see the Mono Project notes found in the Useful Links section below.
 
-###Useful Links
+##Useful Links
 * https://msdn.microsoft.com/en-us/library/aa288468(VS.71).aspx
 * http://www.mono-project.com/docs/advanced/pinvoke/
 
-###Legal Stuff
+##Legal Stuff
 Copyright © 2015 Robert McNeel & Associates. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
