@@ -18,6 +18,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="python build_native.py -p osx" workingdir="${SolutionDir}/SampleLibrary/" />
+        <Command type="AfterBuild" command="cp SampleLibrary/SampleRhino.dll.config ${TargetDir}/SampleRhino.dll.config" workingdir="${SolutionDir}" />
+        <Command type="AfterBuild" command="cp SampleLibrary/build/${ProjectConfigName}/libSampleLibrary.dylib ${SolutionDir}/bin/libSampleLibrary.dylib" workingdir="${SolutionDir}" />
+        <Command type="AfterClean" command="rm -rf ${SolutionDir}/bin/libSampleLibrary.dylib" workingdir="${SolutionDir}" />
+        <Command type="AfterClean" command="rm -rf ${SolutionDir}/bin/SampleRhino.dll.config" workingdir="${SolutionDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -26,6 +35,15 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <DefineConstants>ON_RUNTIME_MAC</DefineConstants>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="python build_native.py -p osx" workingdir="${SolutionDir}/SampleLibrary/" />
+        <Command type="AfterBuild" command="cp SampleLibrary/SampleRhino.dll.config ${TargetDir}/SampleRhino.dll.config" workingdir="${SolutionDir}" />
+        <Command type="AfterBuild" command="cp SampleLibrary/build/${ProjectConfigName}/libSampleLibrary.dylib ${SolutionDir}/bin/libSampleLibrary.dylib" workingdir="${SolutionDir}" />
+        <Command type="AfterClean" command="rm -rf ${SolutionDir}/bin/libSampleLibrary.dylib" workingdir="${SolutionDir}" />
+        <Command type="AfterClean" command="rm -rf ${SolutionDir}/bin/SampleRhino.dll.config" workingdir="${SolutionDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
