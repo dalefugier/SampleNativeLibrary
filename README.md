@@ -4,23 +4,24 @@ RhinoCommon cross-platform native library sample
 ##Overview
 This sample demonstrates how to create a RhinoCommon plug-in that utilizes functions from a native C++ library. 
 
-###Building Sample
-To build the sample, you are going to need:
+##Building Sample
 
-####Windows
+###Windows
+To build the sample on Windows, you are going to need:
+
 * Rhino 6 for Windows (WIP, http://discourse.mcneel.com/)
 * Microsoft Visual C# 2013
 * Microsoft Visual C++ 2013
 
-#####Notes
 To build both the Rhino plug-in and the native library, load the **SampleNativeLibrary.sln** solution in Visual Studio 2013. Then, click **Build -> Build Solution**. Note, you might want to unload the **SampleRhino.Mac** project before building. You can do this by right-clicking on the project and clicking **Unload project**.
 
-####Mac
+###Mac
+To build the sample on OS X, you are going to need:
+
 * Rhino 5 for Mac (5.1)
 * Xamarin Studio 5.9
 * Apple Xcode 6.4
 
-#####Notes
 Building the Rhino plug-in the native library are separate processes.
 
 To build the Rhino plug-in, load the **SampleNativeLibrary.sln** solution in Xamarin Studio. Then, click **Build -> Build All**" Note, you may want to unload both the **SampleLibrary** and **SampleRhino.Win** projects before building. You can do this by right-clicking on each project and clicking **Unload**.
