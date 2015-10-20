@@ -13,7 +13,7 @@ To build the sample, you are going to need:
 * Microsoft Visual C++ 2013
 
 #####Notes
-To build both the Rhino plug-in and the native library, load the SampleNativeLibrary.sln solution in Visual Studio 2013. Then, click "Build -> Build Solution." Note, you might want to unload the SampleRhino.Mac project before building. You can do this by right-clicking on the project and selecting "Unload project."
+To build both the Rhino plug-in and the native library, load the **SampleNativeLibrary.sln** solution in Visual Studio 2013. Then, click **Build -> Build Solution**. Note, you might want to unload the **SampleRhino.Mac** project before building. You can do this by right-clicking on the project and clicking **Unload project**.
 
 ####Mac
 * Rhino 5 for Mac (5.1)
@@ -23,9 +23,9 @@ To build both the Rhino plug-in and the native library, load the SampleNativeLib
 #####Notes
 Building the Rhino plug-in the native library are separate processes.
 
-To build the Rhino plug-in, load the SampleNativeLibrary.sln solution in Xamarin Studio. Then, unload both the SampleLibrary and SampleRhino.Win projects by right-clicking on each project and selecting "Unload.". The, click "Build ->Build All."
+To build the Rhino plug-in, load the **SampleNativeLibrary.sln** solution in Xamarin Studio. Then, click **Build -> Build All**" Note, you may want to unload both the **SampleLibrary** and **SampleRhino.Win** projects before building. You can do this by right-clicking on each project and clicking **Unload**.
 
-To build the native library, load the SampleLibrary.xcodeproj into Xcode. Then click "Product -> Build." Note, you will need to copy the output library, libSampleLibrary.dylib, to the Rhino plug-in output folder. Also, copy the SampleRhino.dll.config file, found in the SampleLibrary project folder, to the Rhino plug-in folder. For more information on the config file, see the Mono Project notes found in the Useful Links section below.
+To build the native library, load the **SampleLibrary.xcodeproj** into Xcode. Then click **Product -> Build**. Note, you will need to copy the output library, **libSampleLibrary.dylib**, to the Rhino plug-in output folder. Also, copy **SampleRhino.dll.config**, found in the **SampleLibrary** project folder, to the Rhino plug-in folder. For more information on the config file, see the Mono Project notes found in the Useful Links section below.
 
 ###Useful Links
 * https://msdn.microsoft.com/en-us/library/aa288468(VS.71).aspx
