@@ -45,7 +45,7 @@ Third, and finally, the **libSimpleLibrary.dylib** is copied into the plug-in bu
 
 ## Related Topics
 
-* [MSDN Platform Invoke Tutorial]('https://msdn.microsoft.com/en-us/library/aa288468(VS.71).aspx)
+* [MSDN Platform Invoke Tutorial](https://msdn.microsoft.com/en-us/library/aa288468(VS.71).aspx)
 * [Mono: Interop with Native Libraries](http://www.mono-project.com/docs/advanced/pinvoke/)
 
 ## Legal Stuff
