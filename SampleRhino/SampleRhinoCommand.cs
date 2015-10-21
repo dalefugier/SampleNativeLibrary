@@ -6,7 +6,7 @@ namespace SampleRhino
 {
   public class SampleRhinoCommand : Command
   {
-    private double First { get; set; }
+    private int First { get; set; }
     private double Second { get; set; }
 
     /// <returns>
@@ -25,7 +25,7 @@ namespace SampleRhino
       var rc = Result.Success;
 
       var first = First;
-      rc = Rhino.Input.RhinoGet.GetNumber("First number to add", false, ref first);
+      rc = Rhino.Input.RhinoGet.GetInteger("First number to add", false, ref first);
       if (rc != Result.Success)
         return rc;
 

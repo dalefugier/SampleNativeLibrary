@@ -55,7 +55,7 @@ BOOL CSampleLibraryApp::InitInstance()
 // Sample C Exports
 
 SAMPLELIBRARY_C_FUNCTION
-double Add(double a, double b)
+double Add(int a, double b)
 {
   return a + b;
 }

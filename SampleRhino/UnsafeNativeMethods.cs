@@ -14,6 +14,6 @@ namespace SampleRhino
   internal static class UnsafeNativeMethods
   {
     [DllImport(Import.lib, CallingConvention = CallingConvention.Cdecl)]
-    internal static extern double Add(double a, double b);
+    internal static extern double Add(int a, double b);
   }
 }
