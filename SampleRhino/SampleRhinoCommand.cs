@@ -12,20 +12,15 @@ namespace SampleRhino
     /// <returns>
     /// The command name as it appears on the Rhino command line.
     /// </returns>
-    public override string EnglishName
-    {
-      get { return "SampleRhinoCommand"; }
-    }
+    public override string EnglishName => "SampleRhinoCommand";
 
     /// <summary>
     /// Called by Rhino to "run" your command.
     /// </summary>
-    protected override Result RunCommand(Rhino.RhinoDoc doc, RunMode mode)
+    protected override Result RunCommand(RhinoDoc doc, RunMode mode)
     {
-      var rc = Result.Success;
-
       var first = First;
-      rc = Rhino.Input.RhinoGet.GetInteger("First number to add", false, ref first);
+      var rc = Rhino.Input.RhinoGet.GetInteger("First number to add", false, ref first);
       if (rc != Result.Success)
         return rc;
 
@@ -45,7 +40,7 @@ namespace SampleRhino
         return Result.Failure;
       }
 
-      var str = string.Format("{0} + {1} = {2}", first, second, result);
+      var str = $"{first} + {second} = {result}";
       if (mode == RunMode.Interactive)
         Rhino.UI.Dialogs.ShowMessage(str, EnglishName);
       else
